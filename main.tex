@@ -1,0 +1,222 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% This is a modified ONE COLUMN version of
+% the following template:
+% 
+% Deedy - One Page Two Column Resume
+% LaTeX Template
+% Version 1.1 (30/4/2014)
+%
+% Original author:
+% Debarghya Das (http://debarghyadas.com)
+%
+% Original repository:
+% https://github.com/deedydas/Deedy-Resume
+%
+% IMPORTANT: THIS TEMPLATE NEEDS TO BE COMPILED WITH XeLaTeX
+%
+% This template uses several fonts not included with Windows/Linux by
+% default. If you get compilation errors saying a font is missing, find the line
+% on which the font is used and either change it to a font included with your
+% operating system or comment the line out to use the default font.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% 
+% TODO:
+% 1. Integrate biber/bibtex for article citation under publications.
+% 2. Figure out a smoother way for the document to flow onto the next page.
+% 3. Add styling information for a "Projects/Hacks" section.
+% 4. Add location/address information
+% 5. Merge OpenFont and MacFonts as a single sty with options.
+% 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% CHANGELOG:
+% v1.1:
+% 1. Fixed several compilation bugs with \renewcommand
+% 2. Got Open-source fonts (Windows/Linux support)
+% 3. Added Last Updated
+% 4. Move Title styling into .sty
+% 5. Commented .sty file.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+% Known Issues:
+% 1. Overflows onto second page if any column's contents are more than the
+% vertical limit
+% 2. Hacky space on the first bullet point on the second column.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\documentclass[]{deedy-resume-openfont}
+\usepackage{fontawesome}
+
+\begin{document}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     LAST UPDATED DATE
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%enable this to display last updated date
+%\lastupdated
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%
+%     TITLE NAME
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\namesection{Ram prasad}{Naik}{ \urlstyle{same}\url{http://ramprasadnaik.in}{} | Mysuru, India \\
+\href{mailto:ramprasade10@gmail.com}{ramprasade10@gmail.com} | 9886856449 \\
+\faLinkedin\href{https://www.linkedin.com/in/ramprasadnaik/}{ ramprasadnaik}
+\faGithub\href{http://github.com/Ramprasade10/}{ Ramprasade10}
+}
+
+
+
+%enable this for a title or quote
+%\begin{center}
+%\huge\color{subheadings}\custombold{LIFELONG LEARNER}
+%\end{center}
+
+\section{Education}
+\runsubsection{The National Institute of Engineering}
+\descript{| B.Tech In Computer Science | Senior Year}
+\location{Expected July 2016 – July 2020 | Mysuru, India \textbullet{} Cum. GPA: 8.6}
+\sectionsep
+
+\section{Experience}
+
+\runsubsection{NIE IEEE STUDENT BRANCH}
+\descript{| VOLUNTEER | Android Focus Group Lead}
+\location{July 2016 – Present | \href{http://nisb.in/}{http://nisb.in/}}
+%\vspace{\topsep} % Hacky fix for awkward extra vertical space
+\begin{tightemize}
+\item Organized Competitive Coding competitions like Oculus, Woman In Engineering
+and IEEE Premier League.
+\item Co developed,IEEE Student Branch Android App.Features include : Events
+Notification, Blog, Membership details and Event Attendance.
+\href{https://www.github.com/nisbweb/app}{github.com/nisbweb/app}
+\item Web Development Team, IEEE Bangalore Section.\href{https://www.ieeebangalore.org/}{ieeebangalore.org/}
+\item Mentored and Organized Basic Programming Session through IEEE Computer
+\item Played a active role in technical fests like Adroit'16,Exebit'17,Ankura'17.
+Society. First year students were taught C and C++.
+\end{tightemize}
+\sectionsep
+
+\runsubsection{IEEE Computer Society}
+\descript{| EVENTS LEAD EXECOM }
+\location{November 2017 - Present | NIE IEEE SB}
+\begin{tightemize}
+\item Organized Weekly Meetups, where avid programmers are given hands on with
+technologies : Git, HTML, FOSS, Linux. \href{https://github.com/Ramprasade10/Git-Guide}{github.com/Ramprasade10/Git-Guide}
+\item Project Drive Lead, built a Linux Operating System customized for programmers from scratch based on Arch Linux.
+\item Organized Code Golf, a competition where participants had to solve the problem statements and come up with code with shortest number of
+lines while being time efficient during runtime, the competition was hosted on competitive coding website www.hackerrank.com
+\end{tightemize}
+\sectionsep
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     RESEARCH
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Projects}
+
+\runsubsection{BlockSQL}
+\descript{| DBMS Project}
+\location{Sep 2018 – Present | NIE}
+The BlockSQL has been designed in collaboration with the college's Controller Of Examination Office to facilitate the Students, Teachers and Database Administrators of our college in  shortcomings like automating provisional marks card, transcript generation, previous results, and question papers. It is a secure and scalable application implementing the principles of blockchain into database to ensure data integrity and consistency to help smoothen the operations at the COE’s office.
+Data Analysis and visualization is used to generate useful graphs and metrics about student performance using matplotlib library from the provided data.
+Technologies Used: Python(Flask,pdfkit,PyPDF2, passlib, pathlib, smtplib), SQLite3, matplotlib, tabula(Data Wrangling).
+\sectionsep
+
+\runsubsection{BlockHack}
+\descript{| TECHNIEKS HACKATHON | \href{https://blockhack.herokuapp.com}{blockhack.herokuapp.com}}
+\location{Feb 2018 – Present | \href{https://github.com/Ramprasade10/BlockHack}{github.com/Ramprasade10/BlockHack}}
+A Blockchain Ledger implementation using python would prevent hackers from
+rigging the electronic system to manipulate votes.Each vote(Block) is encrypted
+using sha256 hash,connected subsequently to other blocks, who’s integrity can never
+be compromised. This system enables a Secure, Reliable and let private individuals
+vote from home with biometrics, confirm their votes and who they voted
+\newline Technologies Used: Python, flask(Server), HTML5, CSS,JSON.
+\sectionsep
+
+\runsubsection{CThru}
+\descript{}
+\location{May 2015 – July 2015 | \href{https://github.com/Ramprasade10/Cthru}{github.com/Ramprasade10/Cthru}}
+Android based App to help the blind see the world, a voice narrator guides the user
+of their surroundings.
+
+\sectionsep
+\runsubsection{Online C Compiler}
+\descript{| NIE SUMMER OF CODE | \href{https://c-comp.herokuapp.com}{c-comp.herokuapp.com}}
+\location{June 2017 - Present | \href{https://github.com/Ramprasade10/Online-C-Compiler}{github.com/Ramprasade10/Online-C-Compiler}}
+Online-C-Compiler provides a simple, clean and functional User Interface for
+Compiling and Executing C Code Online without any compiler in the local system.
+Technologies Used: Python, flask(Server), HTML5, CSS, AWS.
+\sectionsep
+
+\runsubsection{MedX}
+\descript{| TECHNIEKS HACKATHON | \href{https://c-comp.herokuapp.com}{c-comp.herokuapp.com}}
+\location{Jan 24 - 25, 2017 | \href{https://github.com/Ramprasade10/MedX}{github.com/Ramprasade10/MedX}}
+MedX is an Android App that provides an all-round health care support by bridging
+the gap among patients, doctors and hospitals. A balanced ecosystem where patients
+find the best of doctors, and doctors pay a commission for each checkup. Features
+include in app symptom diagnostics, appointment and pill reminder.
+Technologies Used : Android, SQLite DB.
+\sectionsep
+
+\section{AWARDS}
+\begin{minipage}[t]{.60\textwidth}
+\runsubsection{Brain Tech Championship 2018}
+\descript{| Zonal Winner}
+\location{Feb 2018 | Azure Skynet Solutions}
+
+\sectionsep
+
+\runsubsection{Technieks Hackathon NIE IEEE}
+\descript{| Runner-up}
+\location{Feb 2018| NIE IEEE SB}
+
+\sectionsep
+
+\runsubsection{NIE Summer Of Code}
+\descript{| Winner}
+\location{Jun 2017 | NIE IEEE SB}
+
+\sectionsep
+\runsubsection{Electronica 5.0}
+\descript{| Winner}
+\location{2017 | NIE IEEE SB}
+
+
+\sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.35\textwidth}
+\subsection{Certifications}
+\location{\textbullet{}JAVA Programming | Oracle, 2014}
+\location{\textbullet{}Android Development | Greenfield Training Academy, 2015}
+\location{\textbullet{}Arduino Based Robotics | Logichive Solutions, 2016}
+\end{minipage}
+\sectionsep
+
+\section{SKILLS}
+\begin{minipage}[t]{.6\textwidth}
+\location{Strongest Areas}
+Databases \textbullet{}    Data Analysis/Visualization/Wrangling \textbullet{} Statistics \\ 
+\location{Programming}
+C \textbullet{} Python \textbullet{} JAVA \textbullet{} C \textbullet{} C++ \textbullet{} Android \textbullet{} R \\
+\location{Tools And Frameworks}
+Numpy\textbullet{} Pandas\textbullet{} Matplotlib\textbullet{} Seaborn \textbullet{} Scikit-learn \textbullet{} Flask\textbullet{} MySQL\textbullet{} SQLite \textbullet{} MongoDB \textbullet{} Git\textbullet{} Shell \textbullet{} \LaTeX\
+\sectionsep
+\end{minipage}
+\hfill
+\begin{minipage}[t]{.35\textwidth}
+\subsection{Languages}
+\location{Full Professional Proficiency} English\\
+\location{Professional Working Proficiency}Hindi, Kannada 
+\end{minipage}
+
+\end{document}  \documentclass[]{article}
